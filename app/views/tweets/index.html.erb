@@ -1,7 +1,10 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Tweets</h1>
-
+<section class="section">
+  <div class="container">
+    <div class="columns">
+    <%= render 'feed'%>
+    </div>    
+</div>
+</section>
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
